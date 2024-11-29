@@ -13,7 +13,7 @@ from config import *
 # giving it 2 numbers, which are the 2 pin numbers connected to the motor.
 front_left = Wheel(FL[0], FL[1])
 front_right = Wheel(FR[0], FR[1])
-rear_left = Wheel(RL[0], [RL[1])
+rear_left = Wheel(RL[0], RL[1])
 rear_right = Wheel(RR[0], RR[1])
 
 # this spin the wheel at 50 percent duty cycle
