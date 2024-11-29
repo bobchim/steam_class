@@ -1,13 +1,14 @@
 import time
 from wheel import Wheel, Chassis
+from config import *
 
 
 # init wheels
 wheels = {
-        'front_left':   Wheel(11, 10, pwm_min=0, pwm_max=65535),
-        'front_right':  Wheel(12, 13, pwm_min=0, pwm_max=65535),
-        'rear_left':    Wheel(7, 6, pwm_min=0, pwm_max=65535),
-        'rear_right':   Wheel(8, 9, pwm_min=0, pwm_max=65535),
+        'front_left':   Wheel(FL[0], FL[1], pwm_min=0, pwm_max=65535),
+        'front_right':  Wheel(FR[0], FR[1], pwm_min=0, pwm_max=65535),
+        'rear_left':    Wheel(RL[0], RL[1], pwm_min=0, pwm_max=65535),
+        'rear_right':   Wheel(RR[0], RR[1], pwm_min=0, pwm_max=65535),
 }
 
 # init the car with 4 wheels
